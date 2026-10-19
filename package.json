@@ -1,0 +1,29 @@
+{
+  "name": "ops-under-pressure",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Internal operational work management app for the Newtonite Software Engineering Challenge",
+  "scripts": {
+    "dev": "concurrently \"npm:server\" \"npm:client\"",
+    "server": "nodemon server/index.js",
+    "client": "vite --host 0.0.0.0",
+    "start": "node server/index.js",
+    "test": "node --test",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "better-sqlite3": "^11.8.1",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.9",
+    "vite": "^6.0.7"
+  }
+}

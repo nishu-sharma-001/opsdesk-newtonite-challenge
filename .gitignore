@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.env
+server/opsdesk.db
+server/opsdesk.db-shm
+server/opsdesk.db-wal
